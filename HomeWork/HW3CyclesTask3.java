@@ -12,6 +12,6 @@ public class HW3CyclesTask3 {
         x = scanner.nextInt();
         y = x * (x + 1) % 2;
         System.out.println(y);
-        
+
     }
 }
