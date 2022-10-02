@@ -10,7 +10,9 @@ public class HW3CyclesTask3 {
         int x;
         int y;
         x = scanner.nextInt();
-        y = x * (x + 1) % 2;
+        do {
+            y = x * (x + 1) % 2;
+        } while (x<0);
         System.out.println(y);
 
     }
