@@ -6,7 +6,11 @@ import java.util.Arrays;
 public class ArraysTask5_6 {
     public static void main(String[] args) {
 
-        int[] array_2 = {1,2,3,7,5};
+        int[] array_2 = {1, 2, 3, 7, 5};
+        for (int i = array_2.length - 1; i >= 0; i--) {
+            System.out.print(array_2[i]);
+        }
+        System.out.println();
         for (int i = 0; i < array_2.length; i++) {
         }
         System.out.println(Arrays.toString(array_2));
