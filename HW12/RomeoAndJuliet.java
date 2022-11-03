@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Arrays;
 
 public class RomeoAndJuliet {
     public static void main(String[] args) throws IOException {
@@ -17,9 +18,10 @@ public class RomeoAndJuliet {
         }
         romeo.close();
 
-        String s = text.toString();
-        String[] words = s.split(",| |\n|=");
-        String longest = " ";
+        String s = text.toString().replace(" ,()?=.][-", " ");
+
+        String[] words = s.split(" ");
+        String longest = "";
 
         for (int i = 0; i < words.length; i++) {
             for (int j = 1 + i; j < words.length; j++) {
